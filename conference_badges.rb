@@ -27,5 +27,4 @@ def printer(attendees)
     assign_rooms(element).each do |first|
       puts first
     end
-  end
 end
