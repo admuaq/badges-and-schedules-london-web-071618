@@ -21,7 +21,7 @@ end
 
 def printer(attendees)
   attendees.first do |element|
-    puts batch_badge_creator(element)
+    batch_badge_creator
     puts assign_rooms(element)
   end 
 end
