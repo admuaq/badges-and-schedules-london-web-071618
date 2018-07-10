@@ -20,8 +20,8 @@ def assign_rooms(attendees)
 end 
 
 def printer(attendees)
-  attendees.each do |element|
-    batch_badge_creator(element)
-    assign_rooms(element)
+  attendees.each_with_index do |element, i|
+    batch_badge_creator(element, i)
+    assign_rooms(element, i)
   end 
 end
