@@ -19,7 +19,7 @@ def assign_rooms(attendees)
   return cont
 end 
 
-def printer(attendees)
+def printer
   puts batch_badge_creator.each_line
   puts assign_rooms.each_line
 end
