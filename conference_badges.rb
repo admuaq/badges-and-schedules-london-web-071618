@@ -13,8 +13,8 @@ end
 
 def assign_rooms(attendees)
   cont = []
-  attendees.each do |element|
-    cont << "Hello #{element}! You'll be assigned to room #{element.index}!"
+  attendees.each_with_index do |element, i|
+    cont << "Hello #{element}! You'll be assigned to room #{i}!"
   end 
   return cont
 end 
