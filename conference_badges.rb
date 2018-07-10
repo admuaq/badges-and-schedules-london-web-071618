@@ -15,3 +15,6 @@ def assign_rooms(attendees)
   cont = []
   attendees.each do |element|
     cont << badge_maker(element) + " You'll be assigned to room " + attendees.each_with_index
+  end 
+  return cont
+end 
